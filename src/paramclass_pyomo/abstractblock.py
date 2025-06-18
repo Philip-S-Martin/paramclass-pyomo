@@ -112,11 +112,11 @@ class AbstractBlock(ParamClass, Generic[TAbstractBlock]):
         else:
             raise UnsupportedBlockType(f"{type(self._block)}")
     
-    def __setattribute__(self, key, val):
+    def __setattr__(self, key, val):
         if key not in _pyo_protected:
             self.__set_proxy__(key, val)
         else:
-            super().__setattribute__(key, val)
+            super().__setattr__(key, val)
 
     def __getattribute__(self, name):
         if name not in _pyo_protected:
