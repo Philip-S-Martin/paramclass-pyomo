@@ -4,3 +4,22 @@ requires = [
     "wheel"
 ]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "paramclass-pyomo"
+version = "0.1.0"
+description = "Pyomo integration for paramclass."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["license.txt"]
+dependencies = [
+    "paramclass",
+    "pyomo",
+]
+
+[tool.uv.sources]
+paramclass = { path = "../paramclass", editable = true }
+
+[tool.setuptools.packages.find]
+where = ["src"]
