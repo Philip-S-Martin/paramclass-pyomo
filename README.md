@@ -29,6 +29,13 @@ assert str(model.c.expr) == "1  <=  x"
 The goal is to make reusable Pyomo model pieces easier to package, override,
 compose, test, lint, and statically analyze.
 
+## Project Timeline
+
+`paramclass-pyomo` was developed during 2023-2024 and has been used in
+production workflows since 2023. Public packaging was added in 2025, and public
+documentation was added in 2026 to make the project easier to evaluate, install,
+and reuse outside its original environment.
+
 ## Install
 
 ```bash
