@@ -43,7 +43,7 @@ wheels = [
 
 [[package]]
 name = "paramclass"
-version = "0.1.0"
+version = "1.1.0"
 source = { editable = "../paramclass" }
 
 [package.metadata]
@@ -52,7 +52,7 @@ provides-extras = ["dev"]
 
 [[package]]
 name = "paramclass-pyomo"
-version = "0.1.0"
+version = "1.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "paramclass" },
