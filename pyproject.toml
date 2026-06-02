@@ -18,6 +18,11 @@ dependencies = [
     "pyomo",
 ]
 
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
 [tool.uv.sources]
 paramclass = { path = "../paramclass", editable = true }
 
